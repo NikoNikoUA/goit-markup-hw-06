@@ -377,6 +377,51 @@ button {
     fill: #fff;
    } */
 
+   /* ***** HERO FORM ***** */
+
+   .modal-text {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+   }
+
+   .hero-label {
+    font-family: var(--primary-font); 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+   }
+
+   .hero-textarea {
+    color: rgba(46, 47, 66, 0.4);
+    resize: none;
+   }
+
+   .hero-form-button {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    display: block;
+    padding: 16px 32px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    min-width: 169px;
+    height: 56px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+   }
+
 /* ================= BENEFITS ================= */
 .benefits-section-list {
   display: flex;
@@ -586,7 +631,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==================== FORM ===================== */
+/* ==================== FOOTER FORM ===================== */
 
 .label {
 font-family: var(--primary-font);
