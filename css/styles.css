@@ -424,8 +424,9 @@ button {
 .hero-textarea-block {
   display: flex;
   flex-direction: column;
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
+
 .hero-textarea {
   resize: none;
   padding-top: 8px;
@@ -447,6 +448,8 @@ margin-bottom: 16px;
 }
 
 .hero-checkbox {
+  text-align: left;
+  margin-bottom: 24px;
 }
 
 .hero-form-button {
