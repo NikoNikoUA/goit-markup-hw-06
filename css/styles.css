@@ -422,8 +422,6 @@ button {
   text-align: left;
 }
 .hero-textarea-block {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 16px;
 }
 
