@@ -14,7 +14,7 @@
 
   --svg-icon-color: #f4f4fd;
 
-  /* --effect-timing: cubic-bezier(0.4, 0, 0.2, 1); */
+  --transition-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============= Inherited features ============= */
@@ -201,7 +201,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-color-heading);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-effect);
 }
 
 .menu-link:hover,
@@ -217,7 +217,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--secondary-color-par);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-effect);
 }
 
 .contact-info:hover,
@@ -236,7 +236,7 @@ button {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--accent-color);
   border-radius: 2px;
 
   position: absolute;
@@ -279,7 +279,7 @@ button {
 
 .hero-btn {
   font-family: var(--primary-font);
-  background-color: #4d5ae5;
+  background-color: var(--logo-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -296,7 +296,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 
 .hero-btn:hover,
@@ -315,8 +315,8 @@ button {
   background-color: rgba(46, 47, 66, 0.4);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-effect),
+    visibility var(--transition-effect);
 }
 
 .backdrop.is-hidden {
@@ -334,7 +334,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-effect);
 
   min-width: 408px;
   min-height: 584px;
@@ -358,8 +358,8 @@ button {
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect),
+    color var(--transition-effect);
 }
 
 .modal-button:hover,
@@ -400,6 +400,8 @@ button {
   height: 40px;
   width: 100%;
   padding-left: 38px;
+
+  transition: border var(--transition-effect);
 }
 
 .modal-text {
@@ -426,12 +428,6 @@ button {
 
 }
 
-.hero-form-input {
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
 .hero-form-icon {
   position: absolute;
   top: 50%;
@@ -439,7 +435,7 @@ button {
 
   transform: translatey(-50%);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-effect);
 }
 
 .input-icon-positioning {
@@ -461,12 +457,12 @@ button {
   height: 120px;
   width: 100%;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition-effect);
 }
 
 .hero-textarea:hover,
 .hero-textarea:focus {
-  border: 1px solid #4D5AE5;
+  border: 1px solid var(--logo-color);
 
 }
 
@@ -480,10 +476,40 @@ button {
   margin: 0;
 }
 
-.hero-checkbox {
-  text-align: left;
-  margin-bottom: 24px;
+.hero-policy {
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px 0;
 }
+
+.hero-policy::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;  
+  cursor: pointer; 
+  margin-right: 8px;
+
+  /* transition: background-color var(--transition-effect); */
+}
+
+.checkbox:checked + .hero-policy::before {
+background-color: var(--accent-color);
+background-image: url(../images/svg/checkbox.svg);
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+/* .checkbox:focus + .hero-policy::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/svg/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  } */
 
 .hero-form-button {
   font-family: var(--primary-font);
@@ -500,30 +526,33 @@ button {
 
   min-width: 169px;
   height: 56px;
-  background: #4d5ae5;
+  background: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 
 .hero-form-button:hover,
 .hero-form-button:focus {
-  background-color: #404BBF; 
+  background-color: var(--accent-color); 
 }
 
 .hero-form-input:hover,
 .hero-form-input:focus {
-  border: 1px solid #4D5AE5;
+  border: 1px solid var(--logo-color);
  
 }
 
-.hero-form-input:hover ~ .hero-form-icon,
-.hero-form-input:focus ~ .hero-form-icon {
-  fill: #4D5AE5;
+.hero-form-input:hover + .hero-form-icon,
+.hero-form-input:focus + .hero-form-icon {
+  fill: var(--logo-color);
 }
  
+.hero-form-icon:hover {
+  fill: var(--logo-color);
+}
 
 
 /* ================= BENEFITS ================= */
@@ -624,16 +653,16 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4d5ae5;
+  background-color: var(--logo-color);
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 
 .sm-list-link:hover,
 .sm-list-link:focus {
-  background-color: #404bbf;
+  background-color: var(--accent-color);
 }
 
 .sm-list-icon {
@@ -663,8 +692,8 @@ button {
   justify-content: center;
   align-items: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-effect),
+    border var(--transition-effect);
 }
 
 .customers-icon {
@@ -732,7 +761,7 @@ button {
 }
 
 .sm-footer-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 
 /* ==================== FOOTER FORM ===================== */
@@ -744,7 +773,7 @@ button {
   align-items: center;
   gap: 16px;
 
-  background-color: #4d5ae5;
+  background-color: var(--logo-color);
   border-radius: 4px;
   border: none;
   min-width: 165px;
@@ -757,7 +786,7 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 
 .subscribe-form {
@@ -816,7 +845,7 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--logo-color);
   height: 48px;
   min-width: 69px;
 
@@ -824,10 +853,10 @@ button {
   border-radius: 4px;
   padding: 12px 24px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect),
+    color var(--transition-effect),
+    box-shadow var(--transition-effect),
+    border var(--transition-effect);
 }
 
 .portfolio-button-item:not(:last-child) {
@@ -871,7 +900,7 @@ button {
 .portfolio-link {
   display: block;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-effect);
 }
 
 .portfolio-link:hover,
@@ -893,7 +922,7 @@ button {
   color: #f4f4fd;
 
   padding: 40px 32px 164px;
-  background-color: #4d5ae5;
+  background-color: var(--logo-color);
   position: absolute;
   left: 0;
   top: 0;
@@ -901,7 +930,7 @@ button {
   height: 100%;
   overflow: auto;
   transform: translatey(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-effect);
 }
 
 .overlay-area {
