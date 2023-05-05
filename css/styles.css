@@ -389,6 +389,7 @@ button {
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
+
 }
 
 .hero-form-field input {
@@ -398,6 +399,7 @@ button {
   border-radius: 4px;
   height: 40px;
   width: 100%;
+  padding-left: 38px;
 }
 
 .modal-text {
@@ -421,7 +423,30 @@ button {
   color: #8e8f99;
   margin-bottom: 4px;
   text-align: left;
+
 }
+
+.hero-form-input {
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.hero-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translatey(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-icon-positioning {
+  position: relative;
+
+}
+
 .hero-textarea-block {
   margin-bottom: 16px;
 }
@@ -435,6 +460,14 @@ button {
   border-radius: 4px;
   height: 120px;
   width: 100%;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-textarea:hover,
+.hero-textarea:focus {
+  border: 1px solid #4D5AE5;
+
 }
 
 .hero-textarea::placeholder {
@@ -479,6 +512,19 @@ button {
 .hero-form-button:focus {
   background-color: #404BBF; 
 }
+
+.hero-form-input:hover,
+.hero-form-input:focus {
+  border: 1px solid #4D5AE5;
+ 
+}
+
+.hero-form-input:hover ~ .hero-form-icon,
+.hero-form-input:focus ~ .hero-form-icon {
+  fill: #4D5AE5;
+}
+ 
+
 
 /* ================= BENEFITS ================= */
 .benefits-section-list {
