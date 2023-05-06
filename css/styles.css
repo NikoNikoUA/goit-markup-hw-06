@@ -342,6 +342,8 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  padding: 72px 24px 24px;
 }
 
 .modal-button {
@@ -380,29 +382,8 @@ button {
 /* ***** HERO FORM ***** */
 
 .form {
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-form-field {
-  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
-
-}
-
-.hero-form-field input {
-  margin: 0;
-  padding: 0;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  height: 40px;
-  width: 100%;
-  padding-left: 38px;
-  padding-right: 4px;
-
-  transition: border var(--transition-effect);
 }
 
 .modal-text {
@@ -412,12 +393,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 72px;
   margin-bottom: 16px;
-  text-align: center;
+
 }
 
 .hero-label {
+  display: block;
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 12px;
@@ -433,6 +414,19 @@ button {
   letter-spacing: 0.04em;
 }
 
+.hero-form-input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  padding-left: 38px;
+  padding-right: 4px;
+
+  transition: border var(--transition-effect);
+}
+
 .hero-form-icon {
   position: absolute;
   top: 50%;
@@ -445,17 +439,15 @@ button {
 
 .input-icon-positioning {
   position: relative;
-
-}
-
-.hero-textarea-block {
-  margin-bottom: 16px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .hero-textarea {
   resize: none;
   padding: 8px 16px;
-  /* padding-left: 16px; */
+  margin-bottom: 16px;
+
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -518,10 +510,7 @@ background-position: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  align-self: center;
   padding: 16px 32px;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -801,6 +790,7 @@ background-position: center;
   width: 264px;
   height: 40px;
   margin-right: 24px;
+  color: white;
 
   padding: 8px 16px;
 }
