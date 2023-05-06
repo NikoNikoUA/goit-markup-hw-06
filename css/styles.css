@@ -421,11 +421,15 @@ button {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   color: #8e8f99;
   margin-bottom: 4px;
   text-align: left;
 
+}
+
+.hero-label-name {
+  letter-spacing: 0.04em;
 }
 
 .hero-form-icon {
@@ -460,9 +464,9 @@ button {
   transition: border var(--transition-effect);
 }
 
-.hero-textarea:hover,
 .hero-textarea:focus {
   border: 1px solid var(--logo-color);
+  outline: none;
 
 }
 
@@ -492,7 +496,7 @@ button {
   cursor: pointer; 
   margin-right: 8px;
 
-  /* transition: background-color var(--transition-effect); */
+  transition: border var(--transition-effect);
 }
 
 .checkbox:checked + .hero-policy::before {
@@ -503,13 +507,10 @@ background-position: center;
 
 }
 
-/* .checkbox:focus + .hero-policy::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/svg/checkbox.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.checkbox:focus + .hero-policy::before {
+ border: 1px solid var(--accent-color);
   
-  } */
+  }
 
 .hero-form-button {
   font-family: var(--primary-font);
@@ -539,21 +540,16 @@ background-position: center;
   background-color: var(--accent-color); 
 }
 
-.hero-form-input:hover,
 .hero-form-input:focus {
   border: 1px solid var(--logo-color);
+  outline: none;
  
 }
 
-.hero-form-input:hover + .hero-form-icon,
 .hero-form-input:focus + .hero-form-icon {
   fill: var(--logo-color);
 }
  
-.hero-form-icon:hover {
-  fill: var(--logo-color);
-}
-
 
 /* ================= BENEFITS ================= */
 .benefits-section-list {
