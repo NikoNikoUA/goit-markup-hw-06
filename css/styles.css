@@ -374,16 +374,14 @@ button {
   fill: currentColor;
 }
 
-/* .modal-button:hover .modal-icon,
-   .modal-button:focus .modal-icon {
-    fill: #fff;
-   } */
 
 /* ***** HERO FORM ***** */
 
-.form {
+
+.hero-form-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
 }
 
 .modal-text {
@@ -431,6 +429,7 @@ button {
   position: absolute;
   top: 50%;
   left: 16px;
+  fill: #2E2F42;
 
   transform: translatey(-50%);
 
@@ -440,14 +439,12 @@ button {
 .input-icon-positioning {
   position: relative;
   display: block;
-  margin-bottom: 8px;
+
 }
 
 .hero-textarea {
   resize: none;
   padding: 8px 16px;
-  margin-bottom: 16px;
-
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -455,6 +452,10 @@ button {
   width: 100%;
 
   transition: border var(--transition-effect);
+}
+
+.hero-form-field-textarea {
+  margin-bottom: 16px;
 }
 
 .hero-textarea:focus {
@@ -476,7 +477,19 @@ button {
 .hero-policy {
     display: flex;
     align-items: center;
-    margin: 0 0 24px 0;
+    
+}
+
+.checkbox-link {
+  color: #4D5AE5;
+}
+
+.checkbox-line {
+  margin: 0 0 24px 0;
+}
+
+.hero-label-checkbox {
+  margin-bottom: 0;
 }
 
 .hero-policy::before {
@@ -775,11 +788,10 @@ background-position: center;
   transition: background-color var(--transition-effect);
 }
 
-.subscribe-form {
+.form-footer {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-
+  gap: 24px;
 }
 
 .input-mail {
@@ -789,8 +801,7 @@ background-position: center;
   background-color: #2e2f42;
   width: 264px;
   height: 40px;
-  margin-right: 24px;
-  color: white;
+    color: white;
 
   padding: 8px 16px;
 }

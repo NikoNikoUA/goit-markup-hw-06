@@ -64,58 +64,121 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button" data-modal-open aria-label="Order service">
+          <button
+            class="hero-btn"
+            type="button"
+            data-modal-open
+            aria-label="Order service"
+          >
             Order Service
           </button>
         </div>
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="modal-button" data-modal-close aria-label="close window">
+            <button
+              class="modal-button"
+              data-modal-close
+              aria-label="close window"
+            >
               <svg class="modal-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-        
-<form class="form" autocomplete="on">
 
-  <p class="modal-text">Leave your contacts and we will call you back</p>
-  
-  <label class="hero-label hero-label-name" for="name">Name</label>
-  <span class="input-icon-positioning">
-  <input class="hero-form-input" type="text" name="name" id="name" required/>
-  <svg class="hero-form-icon" width="18" height="18">
-    <use href="./images/icons.svg#icon-person"></use>
-  </svg>
-</span>
+            <!-- === FORM === -->
 
-  <label class="hero-label" for="tel">Phone</label>
-  <span class="input-icon-positioning">
-  <input class="hero-form-input" type="tel" name="tel" id="tel" required/>
-  <svg class="hero-form-icon" width="18" height="24">
-    <use href="./images/icons.svg#icon-phone"></use>
-  </svg>
-</span>
+            <p class="modal-text">
+              Leave your contacts and we will call you back
+            </p>
 
-  <label class="hero-label" for="mail">Email</label>
-  <span class="input-icon-positioning">
-  <input class="hero-form-input" type="email" name="mail" id="mail" required/>
-  <svg class="hero-form-icon" width="18" height="24">
-    <use href="./images/icons.svg#icon-email"></use>
-  </svg>
-</span>
+            <form class="form" autocomplete="on">
 
-  <label class="hero-label" for="comment">Comment</label>
-  <textarea class="hero-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
+              <div class="hero-form-field">
+              <label class="hero-label hero-label-name" for="name">Name</label>
+              <span class="input-icon-positioning">
+                <input
+                  class="hero-form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <svg class="hero-form-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </span>
+            </div>
 
-  <input class="checkbox visually-hidden" type="checkbox" name="policy" id="policy"/>
-  <label class="hero-policy hero-label" for="policy">I accept the terms and conditions of the&nbsp;<a href="" target="_blank" rel="noreferrer noopener">Privacy Policy</a></label>
+            <div class="hero-form-field">
+              <label class="hero-label" for="tel">Phone</label>
+              <span class="input-icon-positioning">
+                <input
+                  class="hero-form-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required
+                />
+                <svg class="hero-form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </div>
 
+            <div class="hero-form-field">
+              <label class="hero-label" for="mail">Email</label>
+              <span class="input-icon-positioning">
+                <input
+                  class="hero-form-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  required
+                />
+                <svg class="hero-form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </div>
 
-  <button class="hero-form-button" type="submit" aria-label="send information">Send</button>
+            <div class="hero-form-field hero-form-field-textarea">
+              <label class="hero-label" for="comment">Comment</label>
+              <textarea
+                class="hero-textarea"
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
 
-</form>
-</div>
+            <div class="checkbox-line">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <label class="hero-policy hero-label hero-label-checkbox" for="policy"
+                >I accept the terms and conditions of the&nbsp;<a
+                  class="checkbox-link"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+
+              <button
+                class="hero-form-button"
+                type="submit"
+                aria-label="send information"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -233,28 +296,52 @@
                 <p class="description description-align">Product Designer</p>
                 <ul class="sm-employees-list list">
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" arial-label="Instagram">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Linkedin">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Linkedin"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -276,28 +363,52 @@
                 <p class="description description-align">Frontend Developer</p>
                 <ul class="sm-employees-list list">
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Linkedin">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Linkedin"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -319,7 +430,13 @@
                 <p class="description description-align">Marketing</p>
                 <ul class="sm-employees-list list">
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -333,14 +450,26 @@
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Linkedin">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Linkedin"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -362,28 +491,52 @@
                 <p class="description description-align">UI Designer</p>
                 <ul class="sm-employees-list list">
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="sm-employees-list-item">
-                    <a class="sm-list-link" href="" target="_blank" rel="noreferrer noopener" aria-label="Linkedin">
+                    <a
+                      class="sm-list-link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Linkedin"
+                    >
                       <svg class="sm-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -403,7 +556,13 @@
           <h2 class="header-two header-two-customers-section">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-list-item">
-              <a href="" class="customers-list-link" target="_blank" rel="noreferrer noopener" aria-label="company">
+              <a
+                href=""
+                class="customers-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="company"
+              >
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-1"></use>
                 </svg>
@@ -411,7 +570,13 @@
             </li>
 
             <li class="customers-list-item">
-              <a href="" class="customers-list-link" target="_blank" rel="noreferrer noopener" aria-label="company">
+              <a
+                href=""
+                class="customers-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="company"
+              >
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-2"></use>
                 </svg>
@@ -419,7 +584,13 @@
             </li>
 
             <li class="customers-list-item">
-              <a href="" class="customers-list-link" target="_blank" rel="noreferrer noopener" aria-label="company">
+              <a
+                href=""
+                class="customers-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="company"
+              >
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-3"></use>
                 </svg>
@@ -427,7 +598,13 @@
             </li>
 
             <li class="customers-list-item">
-              <a href="" class="customers-list-link" target="_blank" rel="noreferrer noopener" aria-label="company">
+              <a
+                href=""
+                class="customers-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="company"
+              >
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-4"></use>
                 </svg>
@@ -435,7 +612,13 @@
             </li>
 
             <li class="customers-list-item">
-              <a href="" class="customers-list-link" target="_blank" rel="noreferrer noopener" aria-label="company">
+              <a
+                href=""
+                class="customers-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="company"
+              >
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-5"></use>
                 </svg>
@@ -443,7 +626,13 @@
             </li>
 
             <li class="customers-list-item">
-              <a href="" class="customers-list-link" target="_blank" rel="noreferrer noopener" aria-label="company">
+              <a
+                href=""
+                class="customers-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="company"
+              >
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-6"></use>
                 </svg>
@@ -472,28 +661,52 @@
           <p class="social-media-footer">Social media</p>
           <ul class="sm-footer list">
             <li class="sm-footer-item">
-              <a href="" class="sm-footer-link sm-list-link" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+              <a
+                href=""
+                class="sm-footer-link sm-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Instagram"
+              >
                 <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="sm-footer-item">
-              <a href="" class="sm-footer-link sm-list-link" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+              <a
+                href=""
+                class="sm-footer-link sm-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Twitter"
+              >
                 <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="sm-footer-item">
-              <a href="" class="sm-footer-link sm-list-link" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+              <a
+                href=""
+                class="sm-footer-link sm-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Facebook"
+              >
                 <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="sm-footer-item">
-              <a href="" class="sm-footer-link sm-list-link" target="_blank" rel="noreferrer noopener" aria-label="Linkedin">
+              <a
+                href=""
+                class="sm-footer-link sm-list-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Linkedin"
+              >
                 <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -502,19 +715,25 @@
           </ul>
         </div>
 
-        <form class="form-footer" name="subscribe" autocomplete="on">
+        <div class="block-three-footer">
           <p class="form-text social-media-footer">Subscribe</p>
-          <div class="subscribe-form">
-            <label class="label" for="mail"></label>
-            <input class="input-mail" type="email" name="mail" id="mail" placeholder="E-mail"/>
+          <form class="form-footer" name="subscribe" autocomplete="on">
+            <label class="label">
+              <input
+                class="input-mail"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="subscribe-button" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
