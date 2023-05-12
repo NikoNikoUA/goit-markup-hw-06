@@ -430,6 +430,7 @@ button {
   top: 50%;
   left: 16px;
   fill: #2E2F42;
+  pointer-events: none;
 
   transform: translatey(-50%);
 
